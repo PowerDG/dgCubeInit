@@ -64,8 +64,8 @@ namespace dgCube.Authorization.Users
 
             await _userManager.InitializeOptionsAsync(tenant.Id);
 
-            CheckErrors(await _userManager.CreateAsync(user, plainPassword));
-            await CurrentUnitOfWork.SaveChangesAsync();
+            //CheckErrors(await _userManager.CreateAsync(user, plainPassword));
+            //await CurrentUnitOfWork.SaveChangesAsync();
 
             return user;
         }

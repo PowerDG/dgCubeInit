@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Abp.Domain.Entities;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -12,7 +13,7 @@ namespace dgCube
     /// <summary>
     /// 应用详情信息
     /// </summary>
-    public class ApplicationInfo
+    public class ApplicationInfo:Entity
     {
 
         /// <summary>
